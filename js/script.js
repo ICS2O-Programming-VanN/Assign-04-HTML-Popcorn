@@ -1,7 +1,10 @@
+
+// Activates Strict Mode
 "use strict";
 
+// This Function takes in the user's choices of popcorn a outputs back the price of their order
 function displayCost() {
-  // Constants
+  // Constants (Prices and Tax/HST)
   const HST = 0.13;
   const TOPPING_COST = 3.99;
   const SMALL_COST = 5.79;
@@ -32,7 +35,7 @@ function displayCost() {
   let numToppings = checkboxes.length;
   let costToppings = numToppings * TOPPING_COST;
 
-   // Input for Drink Selection
+  // Input for Drink Selection
   let drink = document.querySelector('input[name="drink"]:checked').value;
   
   // IF user selected the Small Size
