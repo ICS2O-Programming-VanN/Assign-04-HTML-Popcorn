@@ -31,8 +31,8 @@ function displayCost() {
 	let flavour = flavourSelection.options[flavourSelection.selectedIndex].value;
 
   // Toppings Cost and Input for Toppings
-  let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-  let numToppings = checkboxes.length;
+  let toppingCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+  let numToppings = toppingCheckboxes.length;
   let costToppings = numToppings * TOPPING_COST;
 
   // Input for Drink Selection
@@ -54,7 +54,7 @@ function displayCost() {
 
   // If the user chose a popcorn flavour
   if (flavour == "Cheesy Dill" || flavour == "Jalapeno Jack" || flavour == "Salt and Vinegar"
-      || flavour == "Buttersalt" || flavour == "Whalin' White Cheese") {
+      || flavour == "Buttersalt" || flavour == "White Cheese") {
     flavourCost = FLAVOURED_POPCORN_COST
     // If the user chose the plain popcorn flavour
   } else {
