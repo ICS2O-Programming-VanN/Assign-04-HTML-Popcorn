@@ -1,0 +1,66 @@
+ /* Color and text alignment */
+
+body {
+	background-color: rgb(111, 236, 236);
+}
+
+p {
+	background-color: #fbf8ac;
+	font-weight: bold;
+}
+
+main {
+	text-align: center;
+}
+
+/* Centered Div using flexbox */
+.mdl-layout-title {
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	color: #f1f500;
+	font-weight: bold;
+  height: 50px;
+}
+
+h3 {
+  background-color: #ff9494;
+  padding: 20px;
+}
+
+main {
+	text-align: center;
+	font-weight: bold;
+}
+
+#toppings {
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width: 50%;
+  max-height: 100%;
+}
+
+#output {
+  background-color: #fbf8ac;
+  padding: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: bold;
+}
+.table {
+  border-collapse: collapse;
+}
+
+.menu{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
